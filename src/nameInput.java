@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class nameInput {
-
-    public void tamInput() {
+    public static String name; // Змінна для збереження імені Тамагочі
+    public String tamInput() {
         Scanner sc = new Scanner(System.in);
         String inputString;
 
@@ -16,7 +16,8 @@ public class nameInput {
             }
         } while (!isValid(inputString));
 
-        System.out.println("Введено правильне ім'я: " + inputString);
+        name = inputString;
+       return name;
 
 
     }
@@ -25,5 +26,6 @@ public class nameInput {
         // Перевірка, чи введене ім'я містить лише літери
         return input.matches("[a-zA-Z]+");
     }
+
 
 }

@@ -1,10 +1,15 @@
-public class visualTama {
+public class visualTama   {
+
+
 
     public void draw() {
-        System.out.print(
-                "Ваш тамагочі: \n "+
 
-            " /\\_/\\   \t   \n" +
+        String tamagotchiName = nameInput.name;
+
+        System.out.print(
+                "Ваш тамагочі: "+ tamagotchiName +
+
+            "\n /\\_/\\   \t   \n" +
                     "( o.o ) \n" +
                     " > ^ <\n"
         );
