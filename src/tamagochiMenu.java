@@ -2,10 +2,7 @@ import java.util.Scanner;
 
 
 public class tamagochiMenu  {
-
     int Menu;
-
-
 
 
     public void bodyMenu(){
@@ -35,7 +32,9 @@ public class tamagochiMenu  {
                         System.out.println("Ви погрались " + tamagotchiName);
                         break;
                     case 0:
-                        System.out.println("Повернутись в меню");
+                        MainMenu mainMenu = MainMenu.getInstance();
+                        mainMenu.menu();
+
                         return;
                     default:
                         System.out.println("Неправильне значення. Спробуйте ще раз.");

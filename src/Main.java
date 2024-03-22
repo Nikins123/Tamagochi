@@ -5,9 +5,8 @@ import java.util.Timer;
 public class Main {
     public static void main(String[] args) {
 
-        gameMenu gameMenu = new gameMenu();
+        MainMenu gameMenu = MainMenu.getInstance();
         gameMenu.menu();
-
 
     }
 }
